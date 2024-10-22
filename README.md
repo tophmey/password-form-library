@@ -1,4 +1,4 @@
-# AWeber Assessment
+# Password Form Library
 
 A React library for password creation components.
 
@@ -11,8 +11,8 @@ A React library for password creation components.
 - [x] config vite for react
 - [x] config eslint for react
 - [x] config vite for library mode
-- [x] configure demo
-- [x] configure library
+- [ ] configure demo
+- [ ] configure library
 - [ ] create tests for library
 - [ ] create components for library
 - [ ] create components for demo
