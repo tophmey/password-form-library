@@ -17,3 +17,7 @@ A React library for password creation components.
 - [ ] create components for library
 - [ ] create components for demo
 - [ ] configure library build
+- [ ] create github repo
+- [ ] configure github repo
+- [ ] convert to typescript?
+- [ ] move validation utilities to library
