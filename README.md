@@ -11,8 +11,12 @@ A React library for password creation components.
 - [x] config vite for react
 - [x] config eslint for react
 - [x] config vite for library mode
-- [ ] configure demo
-- [ ] configure library
+- [x] add vitest
+- [x] config vitest
+- [x] add react-testing-library
+- [x] config react-testing-library
+- [x] configure demo
+- [x] configure library
 - [ ] create tests for library
 - [ ] create components for library
 - [ ] create components for demo

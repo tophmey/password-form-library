@@ -33,4 +33,10 @@ export default defineConfig({
       },
     },
   },
+  test: {
+    setupFiles: ["./test/setupTests.js"],
+    root: path.resolve(__dirname, "lib"),
+    globals: true,
+    environment: "jsdom",
+  },
 });
