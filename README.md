@@ -8,10 +8,11 @@ A React library for password creation components.
 
 ## TODO
 
-- [ ] config vite for react
-- [ ] config vite for library mode
-- [ ] configure demo
-- [ ] configure library
+- [x] config vite for react
+- [x] config eslint for react
+- [x] config vite for library mode
+- [x] configure demo
+- [x] configure library
 - [ ] create tests for library
 - [ ] create components for library
 - [ ] create components for demo
