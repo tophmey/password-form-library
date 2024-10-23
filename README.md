@@ -11,7 +11,7 @@ A React library for password creation components.
 Password Form Library exposes two React components, that can be imported as:
 
 1. PasswordInput
-2. Form
+2. CreatePasswordForm
 
 ### PasswordInput
 
@@ -19,7 +19,7 @@ React Component that renders a password input.
 
 - Accepts an inputRef that is forwarded to the input node.
 
-### Form
+### CreatePasswordForm
 
 React Component that renders a form containing password entry fields, error reporting, a submit button, and a success dialog.
 
