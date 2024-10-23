@@ -17,9 +17,9 @@ A React library for password creation components.
 - [x] config react-testing-library
 - [x] configure demo
 - [x] configure library
-- [ ] create tests for library
-- [ ] create components for library
-- [ ] create components for demo
+- [x] create tests for library
+- [x] create components for library
+- [x] create components for demo
 - [ ] configure library build
 - [ ] create github repo
 - [ ] configure github repo
