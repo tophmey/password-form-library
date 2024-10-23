@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import PasswordInput from "../PasswordInput";
+import validators from "../validators";
 
 export default CreatePasswordForm;
 
@@ -28,11 +29,11 @@ function CreatePasswordForm({ username }) {
       required: true,
       minLength: { value: 6, message: "Password must be 6 characters" },
       validate: {
-        mustHaveSpecialCharacter,
-        mustMatchVerificationPassword,
-        mustHaveUppercaseLetter,
-        mustHaveLowercaseLetter,
-        mustHaveNumber,
+        mustHaveSpecialCharacter: validators.mustHaveSpecialCharacter,
+        mustMatchVerificationPassword: validators.mustMatchVerificationPassword,
+        mustHaveUppercaseLetter: validators.mustHaveUppercaseLetter,
+        mustHaveLowercaseLetter: validators.mustHaveLowercaseLetter,
+        mustHaveNumber: validators.mustHaveNumber,
       },
     }
   );
@@ -105,31 +106,4 @@ function CreatePasswordForm({ username }) {
       </dialog>
     </>
   );
-}
-
-function mustHaveUppercaseLetter(value) {
-  const hasUppercase = value.match(/[A-Z]/);
-  return !!hasUppercase || "Input must have one uppercase letter";
-}
-function mustHaveLowercaseLetter(value) {
-  const hasLowercase = value.match(/[a-z]/);
-  return !!hasLowercase || "Input must have one lowercase letter";
-}
-function mustHaveNumber(value) {
-  const hasNumber = value.match(/\d/);
-  return !!hasNumber || "Input must have one number";
-}
-
-function mustHaveSpecialCharacter(value) {
-  const specialChars = `!@#$%^&*()_-+={[}]|:;"'<,>.)`;
-  return (
-    specialChars.split("").some((char) => value.includes(char)) ||
-    `Password must include one of these characters: ${specialChars}`
-  );
-}
-
-function mustMatchVerificationPassword(value, formState) {
-  const { "confirm-password": verifyPassword, "new-password": newPassword } =
-    formState;
-  return verifyPassword === newPassword || "The passwords do not match.";
 }

@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { PasswordInput } from "src";
+import { PasswordInput, validators } from "src";
 
 export default UpdatePasswordForm;
 
@@ -23,13 +23,7 @@ function UpdatePasswordForm() {
     "new-password",
     {
       required: true,
-      validate: {
-        mustHaveSpecialCharacter,
-        mustMatchVerificationPassword,
-        mustHaveUppercaseLetter,
-        mustHaveLowercaseLetter,
-        mustHaveNumber,
-      },
+      validate: validators,
     }
   );
   const { ref: confirmPasswordRef, ...confirmPasswordProps } = register(
@@ -85,33 +79,6 @@ function UpdatePasswordForm() {
       </fieldset>
     </form>
   );
-}
-
-function mustHaveUppercaseLetter(value) {
-  const hasUppercase = value.match(/[A-Z]/);
-  return !!hasUppercase || "Input must have one uppercase letter";
-}
-function mustHaveLowercaseLetter(value) {
-  const hasLowercase = value.match(/[a-z]/);
-  return !!hasLowercase || "Input must have one lowercase letter";
-}
-function mustHaveNumber(value) {
-  const hasNumber = value.match(/\d/);
-  return !!hasNumber || "Input must have one number";
-}
-
-function mustHaveSpecialCharacter(value) {
-  const specialChars = `!@#$%^&*()_-+={[}]|:;"'<,>.)`;
-  return (
-    specialChars.split("").some((char) => value.includes(char)) ||
-    `Password must include one of these characters: ${specialChars}`
-  );
-}
-
-function mustMatchVerificationPassword(value, formState) {
-  const { "confirm-password": verifyPassword, "new-password": newPassword } =
-    formState;
-  return verifyPassword === newPassword || "The passwords do not match.";
 }
 
 function Nbsp() {
