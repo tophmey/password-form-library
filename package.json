@@ -1,7 +1,7 @@
 {
   "name": "password-form-lib",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "main": "./dist/password-form-lib.umd.cjs",
   "module": "./dist/password-form-lib.js",
@@ -19,6 +19,7 @@
     "test": "vitest"
   },
   "dependencies": {
+    "react-hook-form": "^7.53.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",
