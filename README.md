@@ -1,6 +1,6 @@
 # Password Form Library
 
-A React library for password creation components.
+A React library for password components.
 
 ## Peer Dependencies
 
