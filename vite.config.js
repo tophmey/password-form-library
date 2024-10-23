@@ -19,8 +19,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "lib/index.js"),
-      name: "AWeberPass",
-      fileName: "aweber-pass",
+      name: "passwordFormLibrary",
     },
     outDir: resolve(__dirname, "dist"),
     emptyOutDir: true,

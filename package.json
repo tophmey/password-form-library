@@ -1,7 +1,7 @@
 {
   "name": "password-form-lib",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "main": "./dist/password-form-lib.umd.cjs",
   "module": "./dist/password-form-lib.js",
