@@ -38,7 +38,7 @@ React Component that renders a form containing password entry fields, error repo
 - [x] create components for library
 - [x] create components for demo
 - [x] configure library build
-- [ ] create github repo
-- [ ] configure github repo
+- [x] create github repo
+- [x] configure github repo
 - [ ] convert to typescript?
 - [ ] move validation utilities to library
