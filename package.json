@@ -1,6 +1,6 @@
 {
   "name": "@tophmey/password-form-library",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "type": "module",
   "main": "./dist/password-form-lib.umd.cjs",
   "module": "./dist/password-form-lib.js",
