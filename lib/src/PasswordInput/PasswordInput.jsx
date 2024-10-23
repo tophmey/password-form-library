@@ -6,11 +6,7 @@
  */
 
 function PasswordInput({ inputRef, ...props }) {
-  const attrs = {};
-  if (inputRef) {
-    attrs.ref = inputRef;
-  }
-  return <input {...attrs} type="password" {...props} />;
+  return <input ref={inputRef} type="password" {...props} />;
 }
 
 export default PasswordInput;
